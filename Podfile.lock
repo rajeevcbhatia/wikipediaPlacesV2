@@ -1,0 +1,16 @@
+PODS:
+  - LocationPicker (1.1.0)
+
+DEPENDENCIES:
+  - LocationPicker
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - LocationPicker
+
+SPEC CHECKSUMS:
+  LocationPicker: 94dbd15ee053646d5c275d44b4dfce8634d66041
+
+PODFILE CHECKSUM: ee7281cfb87876fa4766840778d875ced4392b21
+
+COCOAPODS: 1.5.2
