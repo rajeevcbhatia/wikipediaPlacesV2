@@ -10,12 +10,15 @@
 		2AE414938AA891D8365CB7A6 /* Pods_wikipediaPlacesV2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6377E72DADA692716A199316 /* Pods_wikipediaPlacesV2UITests.framework */; };
 		C4DBC089E275868E6B3636BE /* Pods_wikipediaPlacesV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C0368C35AD97BA5E6CFA982 /* Pods_wikipediaPlacesV2.framework */; };
 		DDDA460F20BD9AC6007B69CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDA460E20BD9AC6007B69CD /* AppDelegate.swift */; };
-		DDDA461120BD9AC6007B69CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDA461020BD9AC6007B69CD /* ViewController.swift */; };
 		DDDA461420BD9AC6007B69CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDDA461220BD9AC6007B69CD /* Main.storyboard */; };
 		DDDA461620BD9AC7007B69CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDDA461520BD9AC7007B69CD /* Assets.xcassets */; };
 		DDDA461920BD9AC7007B69CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDDA461720BD9AC7007B69CD /* LaunchScreen.storyboard */; };
 		DDDA462420BD9AC8007B69CD /* wikipediaPlacesV2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDA462320BD9AC8007B69CD /* wikipediaPlacesV2Tests.swift */; };
 		DDDA462F20BD9AC8007B69CD /* wikipediaPlacesV2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDA462E20BD9AC8007B69CD /* wikipediaPlacesV2UITests.swift */; };
+		DDDA463D20BEA44B007B69CD /* LocationsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDA463C20BEA44B007B69CD /* LocationsListViewController.swift */; };
+		DDDA464020BEA47E007B69CD /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDA463F20BEA47E007B69CD /* LocationsView.swift */; };
+		DDDA464220BEA48B007B69CD /* LocationsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDA464120BEA48B007B69CD /* LocationsPresenter.swift */; };
+		DDDA464420BEC92F007B69CD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDA464320BEC92F007B69CD /* Constants.swift */; };
 		F54E0C0C2FC650E5CC617D60 /* Pods_wikipediaPlacesV2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE1CE4F2635A39DD1E4DC220 /* Pods_wikipediaPlacesV2Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,7 +50,6 @@
 		C96219FC8A94C9291FDC4FCD /* Pods-wikipediaPlacesV2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wikipediaPlacesV2UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-wikipediaPlacesV2UITests/Pods-wikipediaPlacesV2UITests.release.xcconfig"; sourceTree = "<group>"; };
 		DDDA460B20BD9AC6007B69CD /* wikipediaPlacesV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wikipediaPlacesV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDDA460E20BD9AC6007B69CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DDDA461020BD9AC6007B69CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DDDA461320BD9AC6007B69CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DDDA461520BD9AC7007B69CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDDA461820BD9AC7007B69CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,6 +60,10 @@
 		DDDA462A20BD9AC8007B69CD /* wikipediaPlacesV2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wikipediaPlacesV2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDDA462E20BD9AC8007B69CD /* wikipediaPlacesV2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wikipediaPlacesV2UITests.swift; sourceTree = "<group>"; };
 		DDDA463020BD9AC8007B69CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDDA463C20BEA44B007B69CD /* LocationsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsListViewController.swift; sourceTree = "<group>"; };
+		DDDA463F20BEA47E007B69CD /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
+		DDDA464120BEA48B007B69CD /* LocationsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsPresenter.swift; sourceTree = "<group>"; };
+		DDDA464320BEC92F007B69CD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DE1CE4F2635A39DD1E4DC220 /* Pods_wikipediaPlacesV2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wikipediaPlacesV2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -137,12 +143,13 @@
 		DDDA460D20BD9AC6007B69CD /* wikipediaPlacesV2 */ = {
 			isa = PBXGroup;
 			children = (
+				DDDA463E20BEA45B007B69CD /* LocationsList */,
 				DDDA460E20BD9AC6007B69CD /* AppDelegate.swift */,
-				DDDA461020BD9AC6007B69CD /* ViewController.swift */,
 				DDDA461220BD9AC6007B69CD /* Main.storyboard */,
 				DDDA461520BD9AC7007B69CD /* Assets.xcassets */,
 				DDDA461720BD9AC7007B69CD /* LaunchScreen.storyboard */,
 				DDDA461A20BD9AC7007B69CD /* Info.plist */,
+				DDDA464320BEC92F007B69CD /* Constants.swift */,
 			);
 			path = wikipediaPlacesV2;
 			sourceTree = "<group>";
@@ -163,6 +170,16 @@
 				DDDA463020BD9AC8007B69CD /* Info.plist */,
 			);
 			path = wikipediaPlacesV2UITests;
+			sourceTree = "<group>";
+		};
+		DDDA463E20BEA45B007B69CD /* LocationsList */ = {
+			isa = PBXGroup;
+			children = (
+				DDDA463F20BEA47E007B69CD /* LocationsView.swift */,
+				DDDA463C20BEA44B007B69CD /* LocationsListViewController.swift */,
+				DDDA464120BEA48B007B69CD /* LocationsPresenter.swift */,
+			);
+			path = LocationsList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -375,8 +392,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDDA461120BD9AC6007B69CD /* ViewController.swift in Sources */,
+				DDDA464420BEC92F007B69CD /* Constants.swift in Sources */,
+				DDDA464020BEA47E007B69CD /* LocationsView.swift in Sources */,
 				DDDA460F20BD9AC6007B69CD /* AppDelegate.swift in Sources */,
+				DDDA463D20BEA44B007B69CD /* LocationsListViewController.swift in Sources */,
+				DDDA464220BEA48B007B69CD /* LocationsPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,7 +573,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PKSVRKRYXS;
 				INFOPLIST_FILE = wikipediaPlacesV2/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wikipediaPlacesV2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -569,7 +592,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PKSVRKRYXS;
 				INFOPLIST_FILE = wikipediaPlacesV2/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wikipediaPlacesV2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -586,7 +612,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PKSVRKRYXS;
 				INFOPLIST_FILE = wikipediaPlacesV2Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wikipediaPlacesV2Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -604,7 +634,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PKSVRKRYXS;
 				INFOPLIST_FILE = wikipediaPlacesV2Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wikipediaPlacesV2Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -621,7 +655,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PKSVRKRYXS;
 				INFOPLIST_FILE = wikipediaPlacesV2UITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wikipediaPlacesV2UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -638,7 +676,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PKSVRKRYXS;
 				INFOPLIST_FILE = wikipediaPlacesV2UITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wikipediaPlacesV2UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
