@@ -27,7 +27,8 @@ class PlacesListViewController: UIViewController {
 extension PlacesListViewController: PlacesView {
     
     func showError(title: String, message: String) {
-        
+        let alert = UIAlertController.alertWithOKButton(title: title, message: message)
+        present(alert, animated: true, completion: nil)
     }
     
 }

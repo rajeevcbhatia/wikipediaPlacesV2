@@ -21,6 +21,7 @@
 		DDDA464420BEC92F007B69CD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDA464320BEC92F007B69CD /* Constants.swift */; };
 		DDDA464A20BEDA63007B69CD /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDA464920BEDA63007B69CD /* Place.swift */; };
 		DDDA464E20BEDD5A007B69CD /* places.json in Resources */ = {isa = PBXBuildFile; fileRef = DDDA464D20BEDD5A007B69CD /* places.json */; };
+		DDDA465020BEF82F007B69CD /* UIAlertController+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDA464F20BEF82F007B69CD /* UIAlertController+Helper.swift */; };
 		F54E0C0C2FC650E5CC617D60 /* Pods_wikipediaPlacesV2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE1CE4F2635A39DD1E4DC220 /* Pods_wikipediaPlacesV2Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		DDDA464320BEC92F007B69CD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DDDA464920BEDA63007B69CD /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		DDDA464D20BEDD5A007B69CD /* places.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = places.json; sourceTree = "<group>"; };
+		DDDA464F20BEF82F007B69CD /* UIAlertController+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Helper.swift"; sourceTree = "<group>"; };
 		DE1CE4F2635A39DD1E4DC220 /* Pods_wikipediaPlacesV2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wikipediaPlacesV2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -191,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				DDDA464320BEC92F007B69CD /* Constants.swift */,
+				DDDA464F20BEF82F007B69CD /* UIAlertController+Helper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -416,6 +419,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDDA464420BEC92F007B69CD /* Constants.swift in Sources */,
+				DDDA465020BEF82F007B69CD /* UIAlertController+Helper.swift in Sources */,
 				DDDA464020BEA47E007B69CD /* PlacesView.swift in Sources */,
 				DDDA460F20BD9AC6007B69CD /* AppDelegate.swift in Sources */,
 				DDDA464A20BEDA63007B69CD /* Place.swift in Sources */,
