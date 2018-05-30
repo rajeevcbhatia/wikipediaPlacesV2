@@ -18,9 +18,7 @@ class PlacesListViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let locationPickerVC = segue.destination as? LocationPickerViewController, segue.identifier == SegueNames.locationPickerSegue.rawValue {
-            locationPickerVC.completion = placesPresenter.didSelectNewLocation
-        }
+        placesPresenter.prepare(for: segue, sender: sender)
     }
 }
 
@@ -45,8 +43,7 @@ extension PlacesListViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        placesPresenter.didSelectRowAt(indexPath: indexPath)
-        tableView.deselectRow(at: indexPath, animated: true)
+        placesPresenter.didSelectRowAt(indexPath: indexPath, tableView: tableView)
     }
     
 }

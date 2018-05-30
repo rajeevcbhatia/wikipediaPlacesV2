@@ -18,6 +18,12 @@ class PlacesPresenter {
         self.placesView = placesView
     }
     
+    func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let locationPickerVC = segue.destination as? LocationPickerViewController, segue.identifier == SegueNames.locationPickerSegue.rawValue {
+            locationPickerVC.completion = didSelectNewLocation
+        }
+    }
+    
     func didSelectNewLocation(location: Location?) {
         guard let location = location else { return }
         
@@ -36,7 +42,9 @@ class PlacesPresenter {
         return places?.count ?? 0
     }
     
-    func didSelectRowAt(indexPath: IndexPath) {
+    func didSelectRowAt(indexPath: IndexPath, tableView: UITableView) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
         guard let selectedPlace = places?[indexPath.row] else {
             return
         }
