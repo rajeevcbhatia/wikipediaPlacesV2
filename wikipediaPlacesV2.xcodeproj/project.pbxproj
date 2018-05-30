@@ -15,10 +15,12 @@
 		DDDA461920BD9AC7007B69CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDDA461720BD9AC7007B69CD /* LaunchScreen.storyboard */; };
 		DDDA462420BD9AC8007B69CD /* wikipediaPlacesV2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDA462320BD9AC8007B69CD /* wikipediaPlacesV2Tests.swift */; };
 		DDDA462F20BD9AC8007B69CD /* wikipediaPlacesV2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDA462E20BD9AC8007B69CD /* wikipediaPlacesV2UITests.swift */; };
-		DDDA463D20BEA44B007B69CD /* LocationsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDA463C20BEA44B007B69CD /* LocationsListViewController.swift */; };
-		DDDA464020BEA47E007B69CD /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDA463F20BEA47E007B69CD /* LocationsView.swift */; };
-		DDDA464220BEA48B007B69CD /* LocationsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDA464120BEA48B007B69CD /* LocationsPresenter.swift */; };
+		DDDA463D20BEA44B007B69CD /* PlacesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDA463C20BEA44B007B69CD /* PlacesListViewController.swift */; };
+		DDDA464020BEA47E007B69CD /* PlacesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDA463F20BEA47E007B69CD /* PlacesView.swift */; };
+		DDDA464220BEA48B007B69CD /* PlacesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDA464120BEA48B007B69CD /* PlacesPresenter.swift */; };
 		DDDA464420BEC92F007B69CD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDA464320BEC92F007B69CD /* Constants.swift */; };
+		DDDA464A20BEDA63007B69CD /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDA464920BEDA63007B69CD /* Place.swift */; };
+		DDDA464E20BEDD5A007B69CD /* places.json in Resources */ = {isa = PBXBuildFile; fileRef = DDDA464D20BEDD5A007B69CD /* places.json */; };
 		F54E0C0C2FC650E5CC617D60 /* Pods_wikipediaPlacesV2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE1CE4F2635A39DD1E4DC220 /* Pods_wikipediaPlacesV2Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,10 +62,12 @@
 		DDDA462A20BD9AC8007B69CD /* wikipediaPlacesV2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wikipediaPlacesV2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDDA462E20BD9AC8007B69CD /* wikipediaPlacesV2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wikipediaPlacesV2UITests.swift; sourceTree = "<group>"; };
 		DDDA463020BD9AC8007B69CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DDDA463C20BEA44B007B69CD /* LocationsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsListViewController.swift; sourceTree = "<group>"; };
-		DDDA463F20BEA47E007B69CD /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
-		DDDA464120BEA48B007B69CD /* LocationsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsPresenter.swift; sourceTree = "<group>"; };
+		DDDA463C20BEA44B007B69CD /* PlacesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesListViewController.swift; sourceTree = "<group>"; };
+		DDDA463F20BEA47E007B69CD /* PlacesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesView.swift; sourceTree = "<group>"; };
+		DDDA464120BEA48B007B69CD /* PlacesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesPresenter.swift; sourceTree = "<group>"; };
 		DDDA464320BEC92F007B69CD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DDDA464920BEDA63007B69CD /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		DDDA464D20BEDD5A007B69CD /* places.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = places.json; sourceTree = "<group>"; };
 		DE1CE4F2635A39DD1E4DC220 /* Pods_wikipediaPlacesV2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wikipediaPlacesV2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -143,13 +147,14 @@
 		DDDA460D20BD9AC6007B69CD /* wikipediaPlacesV2 */ = {
 			isa = PBXGroup;
 			children = (
+				DDDA464C20BEDD27007B69CD /* Model */,
+				DDDA464520BECFED007B69CD /* Helpers */,
 				DDDA463E20BEA45B007B69CD /* LocationsList */,
 				DDDA460E20BD9AC6007B69CD /* AppDelegate.swift */,
 				DDDA461220BD9AC6007B69CD /* Main.storyboard */,
 				DDDA461520BD9AC7007B69CD /* Assets.xcassets */,
 				DDDA461720BD9AC7007B69CD /* LaunchScreen.storyboard */,
 				DDDA461A20BD9AC7007B69CD /* Info.plist */,
-				DDDA464320BEC92F007B69CD /* Constants.swift */,
 			);
 			path = wikipediaPlacesV2;
 			sourceTree = "<group>";
@@ -175,11 +180,28 @@
 		DDDA463E20BEA45B007B69CD /* LocationsList */ = {
 			isa = PBXGroup;
 			children = (
-				DDDA463F20BEA47E007B69CD /* LocationsView.swift */,
-				DDDA463C20BEA44B007B69CD /* LocationsListViewController.swift */,
-				DDDA464120BEA48B007B69CD /* LocationsPresenter.swift */,
+				DDDA463F20BEA47E007B69CD /* PlacesView.swift */,
+				DDDA463C20BEA44B007B69CD /* PlacesListViewController.swift */,
+				DDDA464120BEA48B007B69CD /* PlacesPresenter.swift */,
 			);
 			path = LocationsList;
+			sourceTree = "<group>";
+		};
+		DDDA464520BECFED007B69CD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DDDA464320BEC92F007B69CD /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DDDA464C20BEDD27007B69CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DDDA464920BEDA63007B69CD /* Place.swift */,
+				DDDA464D20BEDD5A007B69CD /* places.json */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +315,7 @@
 				DDDA461920BD9AC7007B69CD /* LaunchScreen.storyboard in Resources */,
 				DDDA461620BD9AC7007B69CD /* Assets.xcassets in Resources */,
 				DDDA461420BD9AC6007B69CD /* Main.storyboard in Resources */,
+				DDDA464E20BEDD5A007B69CD /* places.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,10 +416,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDDA464420BEC92F007B69CD /* Constants.swift in Sources */,
-				DDDA464020BEA47E007B69CD /* LocationsView.swift in Sources */,
+				DDDA464020BEA47E007B69CD /* PlacesView.swift in Sources */,
 				DDDA460F20BD9AC6007B69CD /* AppDelegate.swift in Sources */,
-				DDDA463D20BEA44B007B69CD /* LocationsListViewController.swift in Sources */,
-				DDDA464220BEA48B007B69CD /* LocationsPresenter.swift in Sources */,
+				DDDA464A20BEDA63007B69CD /* Place.swift in Sources */,
+				DDDA463D20BEA44B007B69CD /* PlacesListViewController.swift in Sources */,
+				DDDA464220BEA48B007B69CD /* PlacesPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

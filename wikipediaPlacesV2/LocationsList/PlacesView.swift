@@ -8,8 +8,8 @@
 
 import Foundation
 
-protocol LocationsView: AnyObject {
+protocol PlacesView: AnyObject {
     
-    
+    func showError(title: String, message: String)
     
 }

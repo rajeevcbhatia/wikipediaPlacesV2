@@ -1,0 +1,53 @@
+{
+    "places": [{
+               "name": "Amsterdam",
+               "latitude": 52.379189,
+               "longitude": 4.899431
+               },
+               {
+               "name": "Mumbai",
+               "latitude": 19.040847,
+               "longitude": 72.845729
+               },
+               {
+               "name": "Seattle",
+               "latitude": 47.620745,
+               "longitude": -122.349224
+               },
+               {
+               "name": "San Francisco",
+               "latitude": 37.820056,
+               "longitude": -122.477987
+               },
+               {
+               "name": "Paris",
+               "latitude": 48.858409,
+               "longitude": 2.294614
+               },
+               {
+               "name": "Berlin",
+               "latitude": 52.516425,
+               "longitude": 13.378015
+               },
+               {
+               "name": "Prague",
+               "latitude": 50.075012,
+               "longitude": 14.438150
+               },
+               {
+               "name": "Rome",
+               "latitude": 41.889803,
+               "longitude": 12.494142
+               },
+               {
+               "name": "London",
+               "latitude": 51.555800,
+               "longitude": -0.108127
+               },
+               {
+               "name": "Barcelona",
+               "latitude": 41.404708,
+               "longitude": 2.174708
+               }
+               ]
+}
