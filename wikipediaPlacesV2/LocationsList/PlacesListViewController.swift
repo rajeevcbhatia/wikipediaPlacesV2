@@ -11,6 +11,7 @@ import LocationPicker
 
 class PlacesListViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
     fileprivate var placesPresenter: PlacesPresenter!
     
     override func viewDidLoad() {
@@ -43,7 +44,8 @@ extension PlacesListViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        placesPresenter.didSelectRowAt(indexPath: indexPath, tableView: tableView)
+        tableView.deselectRow(at: indexPath, animated: true)
+        placesPresenter.didSelectRowAt(indexPath: indexPath)
     }
     
 }

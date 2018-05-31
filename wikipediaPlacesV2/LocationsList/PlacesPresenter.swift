@@ -13,9 +13,11 @@ class PlacesPresenter {
     
     private weak var placesView: PlacesView?
     private let places: [Place]? = PlaceProvider.defaultPlaces
+    private let application: UIApplicationURLHandlingProtocol
     
-    init(placesView: PlacesView) {
+    init(placesView: PlacesView?, application: UIApplicationURLHandlingProtocol = UIApplication.shared) {
         self.placesView = placesView
+        self.application = application
     }
     
     func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -43,8 +45,7 @@ class PlacesPresenter {
         return places?.count ?? 0
     }
     
-    func didSelectRowAt(indexPath: IndexPath, tableView: UITableView) {
-        tableView.deselectRow(at: indexPath, animated: true)
+    func didSelectRowAt(indexPath: IndexPath) {
         
         guard let selectedPlace = places?[indexPath.row] else {
             return
@@ -54,8 +55,8 @@ class PlacesPresenter {
     }
     
     /** opens the deep link url for the Place */
-    fileprivate func openWikipedia(place: Place) {
-        guard let wikipediaURL = WikipediaConstants.wikipediaBaseUrl, UIApplication.shared.canOpenURL(wikipediaURL) else {
+    private func openWikipedia(place: Place) {
+        guard let wikipediaURL = WikipediaConstants.wikipediaBaseUrl, application.canOpenURL(wikipediaURL) else {
             placesView?.showError(title: ErrorMessages.wikipediaOpenErrorTitle.rawValue, message: ErrorMessages.wikipediaOpenErrorMessage.rawValue)
             return
         }
@@ -65,8 +66,9 @@ class PlacesPresenter {
             return
         }
         
-        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        application.open(url, options: [:], completionHandler: nil)
     }
     
     
 }
+
