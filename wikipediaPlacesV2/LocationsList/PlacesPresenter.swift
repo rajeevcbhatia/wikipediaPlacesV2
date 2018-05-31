@@ -24,10 +24,11 @@ class PlacesPresenter {
         }
     }
     
+    //selected a new location from the location picker
     func didSelectNewLocation(location: Location?) {
         guard let location = location else { return }
         
-        let place = Place(name: location.name ?? location.placemark.name ?? "Custom Place", latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+        let place = Place(name: location.name ?? "Custom Place", latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
         
         openWikipedia(place: place)
     }
@@ -52,19 +53,20 @@ class PlacesPresenter {
         openWikipedia(place: selectedPlace)
     }
     
+    /** opens the deep link url for the Place */
     fileprivate func openWikipedia(place: Place) {
-        guard let wikipediaURL = URL(string: "wikipedia://"), UIApplication.shared.canOpenURL(wikipediaURL) else {
-            placesView?.showError(title: "Error", message: "Cannot open the place. Please ensure you have installed the wikipedia app and try again.")
+        guard let wikipediaURL = WikipediaConstants.wikipediaBaseUrl, UIApplication.shared.canOpenURL(wikipediaURL) else {
+            placesView?.showError(title: ErrorMessages.wikipediaOpenErrorTitle.rawValue, message: ErrorMessages.wikipediaOpenErrorMessage.rawValue)
             return
         }
         
-        let urlString = "wikipedia://places?name=\(place.name.addingPercentEncoding(withAllowedCharacters: CharacterSet.alphanumerics) ?? "")&latitude=\(place.latitude)&longitude=\(place.longitude)"
-        
-        guard let url = URL(string: urlString) else {
-            placesView?.showError(title: "Error", message: "Cannot open the place. Please ensure you have installed the wikipedia app and try again.")
+        guard let url = WikipediaConstants.wikipediaUrl(place: place) else {
+            placesView?.showError(title: ErrorMessages.wikipediaOpenErrorTitle.rawValue, message: ErrorMessages.wikipediaOpenErrorMessage.rawValue)
             return
         }
         
         UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
+    
+    
 }

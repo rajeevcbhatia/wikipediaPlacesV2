@@ -10,6 +10,7 @@ import UIKit
 
 extension UIAlertController {
     
+    /** returns a basic UIAlertView with an OK action */
     class func alertWithOKButton(title
         : String, message: String) -> UIAlertController {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
