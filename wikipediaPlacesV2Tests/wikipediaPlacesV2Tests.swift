@@ -13,24 +13,51 @@ class wikipediaPlacesV2Tests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testWikipediaBaseURLIsValid() {
+        
+        XCTAssertNotNil(WikipediaConstants.wikipediaBaseUrl, "wikpedia base url could not be found")
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testCanOpenWikipediaBaseURL() {
+        
+        guard let wikipediaBaseURL = WikipediaConstants.wikipediaBaseUrl else {
+            XCTFail("wikpedia base url could not be found")
+            return
         }
+        
+        XCTAssert(UIApplication.shared.canOpenURL(wikipediaBaseURL), "Wikipedia base URL cannot be opened")
+        
     }
     
+    func testDefaultPlacesExist() {
+        
+        let places = Place.defaultPlaces
+        
+        XCTAssertNotNil(places, "default places could not be found")
+        
+        XCTAssert(places!.count > 0, "zero default places")
+        
+    }
+
+    func testWikipediaBaseURLForPlace() {
+        
+        guard let place = Place.defaultPlaces?.first else {
+            XCTFail("a default place could not be found")
+            return
+        }
+        
+        guard let wikipediaURLForPlace = WikipediaConstants.wikipediaUrl(place: place) else {
+            XCTFail("could not generate wikipedia url for place")
+            return
+        }
+        
+        XCTAssert(UIApplication.shared.canOpenURL(wikipediaURLForPlace), "cannot open wikipedia url")
+        
+    }
 }
