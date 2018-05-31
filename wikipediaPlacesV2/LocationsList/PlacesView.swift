@@ -8,6 +8,7 @@
 
 import Foundation
 
+//class only protocols should now extend AnyObject instead of class: https://useyourloaf.com/blog/class-only-protocols-in-swift-4/
 protocol PlacesView: AnyObject {
     
     func showError(title: String, message: String)

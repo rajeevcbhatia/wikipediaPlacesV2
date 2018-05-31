@@ -11,8 +11,8 @@ import LocationPicker
 
 class PlacesPresenter {
     
-    fileprivate weak var placesView: PlacesView?
-    fileprivate let places: [Place]? = Place.defaultPlaces
+    private weak var placesView: PlacesView?
+    private let places: [Place]? = Place.defaultPlaces
     
     init(placesView: PlacesView) {
         self.placesView = placesView
