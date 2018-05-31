@@ -22,6 +22,7 @@
 		DDDA464A20BEDA63007B69CD /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDA464920BEDA63007B69CD /* Place.swift */; };
 		DDDA464E20BEDD5A007B69CD /* places.json in Resources */ = {isa = PBXBuildFile; fileRef = DDDA464D20BEDD5A007B69CD /* places.json */; };
 		DDDA465020BEF82F007B69CD /* UIAlertController+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDA464F20BEF82F007B69CD /* UIAlertController+Helper.swift */; };
+		DDFA947120C024D000127EC5 /* PlaceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFA947020C024D000127EC5 /* PlaceProvider.swift */; };
 		F54E0C0C2FC650E5CC617D60 /* Pods_wikipediaPlacesV2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE1CE4F2635A39DD1E4DC220 /* Pods_wikipediaPlacesV2Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +71,7 @@
 		DDDA464920BEDA63007B69CD /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		DDDA464D20BEDD5A007B69CD /* places.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = places.json; sourceTree = "<group>"; };
 		DDDA464F20BEF82F007B69CD /* UIAlertController+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Helper.swift"; sourceTree = "<group>"; };
+		DDFA947020C024D000127EC5 /* PlaceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceProvider.swift; sourceTree = "<group>"; };
 		DE1CE4F2635A39DD1E4DC220 /* Pods_wikipediaPlacesV2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wikipediaPlacesV2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -203,6 +205,7 @@
 			children = (
 				DDDA464920BEDA63007B69CD /* Place.swift */,
 				DDDA464D20BEDD5A007B69CD /* places.json */,
+				DDFA947020C024D000127EC5 /* PlaceProvider.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -424,6 +427,7 @@
 				DDDA460F20BD9AC6007B69CD /* AppDelegate.swift in Sources */,
 				DDDA464A20BEDA63007B69CD /* Place.swift in Sources */,
 				DDDA463D20BEA44B007B69CD /* PlacesListViewController.swift in Sources */,
+				DDFA947120C024D000127EC5 /* PlaceProvider.swift in Sources */,
 				DDDA464220BEA48B007B69CD /* PlacesPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

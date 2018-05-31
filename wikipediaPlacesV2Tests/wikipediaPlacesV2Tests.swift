@@ -37,7 +37,7 @@ class wikipediaPlacesV2Tests: XCTestCase {
     
     func testDefaultPlacesExist() {
         
-        let places = Place.defaultPlaces
+        let places = PlaceProvider.defaultPlaces
         
         XCTAssertNotNil(places, "default places could not be found")
         
@@ -47,7 +47,7 @@ class wikipediaPlacesV2Tests: XCTestCase {
 
     func testWikipediaBaseURLForPlace() {
         
-        guard let place = Place.defaultPlaces?.first else {
+        guard let place = PlaceProvider.defaultPlaces?.first else {
             XCTFail("a default place could not be found")
             return
         }

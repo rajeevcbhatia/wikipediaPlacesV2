@@ -18,21 +18,6 @@ struct Place : Decodable {
     var name: String
     var latitude: Double
     var longitude: Double
-    
-    /** the array of hardcoded places from the json file */
-    static var defaultPlaces: [Place]? {
-        if let url = Bundle.main.url(forResource: "places", withExtension: "json") {
-            do {
-                let data = try Data(contentsOf: url)
-                let decoder = JSONDecoder()
-                let jsonData = try decoder.decode(ResponseData.self, from: data)
-                return jsonData.places
-            } catch {
-                print("error:\(error)")
-            }
-        }
-        return nil
-    }
 }
 
 

@@ -12,7 +12,7 @@ import LocationPicker
 class PlacesPresenter {
     
     private weak var placesView: PlacesView?
-    private let places: [Place]? = Place.defaultPlaces
+    private let places: [Place]? = PlaceProvider.defaultPlaces
     
     init(placesView: PlacesView) {
         self.placesView = placesView
